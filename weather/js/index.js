@@ -1,4 +1,4 @@
-var loc = new geoplugin_city() + ", " + new geoplugin_region();
+var loc = geoplugin_city() + ", " + geoplugin_region();
 document.getElementById("location").innerHTML = loc;
 var degree = "F";
 

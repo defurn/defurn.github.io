@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Syncopate:700');
+body{
+  background:black;
+}
+#reset{
+  color:white;
+}
+
+
+.win{
+  display:none;
+}
+
+h1{
+  text-align:center;
+  color:#8e0505;
+  padding:.2em;
+}
+p{
+  text-align:center;
+  margin-top:-2em;
+}
+
+table{
+  background:#000000;
+  margin:auto;
+}
+
+.box{
+  font-family:"Syncopate";
+  font-size:5em;
+  width:1.6em;
+  height:1.6em;
+  text-align:center;
+  background:#333333;
+  color:black;
+  border:solid black 0.1em;
+  cursor:crosshair;
+ 
+}
+
+.btn{
+  background:#333333;
+  color:black;
+  font-weight:bold;
+  font-size:1.5em;
+}
+.btn:hover{
+  color:white;
+}
+.player{
+  background:#aaa
+}
+
+.player:hover{
+  color:black;
+  cursor:default;
+}
+.controls{
+  text-align:center;
+  margin:auto;
+  padding-bottom:1em;
+  width:15em;
+}
+
+
+
+

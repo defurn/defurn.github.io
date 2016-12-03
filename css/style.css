@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
+
+#shapes{
+  position:absolute;
+  right:12%;
+  top:-1px;
+  display:inline-flex;
+}
+.slant{
+  background:#bbb;
+  width: 100px;
+	height: 90px;
+  transform: skew(120deg);
+  margin-right:50px;
+}
+
+body {
+  display:flex;
+  background:#000;
+  flex-wrap:wrap;
+  font-family:'Archivo Narrow';
+  margin-top:-1px;
+}
+
+body>div{
+  width:100%;
+  padding:10px;
+}
+
+#nav{
+  font-size:2em;
+  background:#ddd;
+  display:inline-flex;
+}
+
+a{
+  text-decoration:none;
+  color:black;
+    padding:10px;
+
+}
+a:visited{
+  text-decoration:none;
+}
+
+a:hover{
+  color:#ccc;
+  background-color:black;
+}
+
+#email:hover{
+  cursor:copy;
+}
+
+#contact{
+  background:#bbb;
+    
+}
+
+#about{
+  background:#999;
+  display:flex;
+  
+}
+
+#aboutText{
+  padding-top:5%;
+  padding-left:1%;
+}
+
+#mypicture{
+  border-radius:100%;
+}
+/* @media only screen and (max-width:500px){ */
+#jsprojects{
+  background:#777;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#jsprojects>h2{
+  padding:20px;
+}
+
+.project{
+  padding:.7em;
+}
+
+.copy, .copy:hover{
+  background:red; !important
+}
+

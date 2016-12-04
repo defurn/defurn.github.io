@@ -93,6 +93,22 @@
     background:red; !important
   }
 
+  .pic{
+    height:15vh;
+    max-width:100%;
+    overflow:hidden;
+    margin-top:-15px;
+    margin-bottom:-15px;
+  }
+#pictures>img{
+  height:100%;
+
+}
+
+  div>h2{
+    padding:7px;
+  }
+
 }
 
 @media (min-width: 401px){

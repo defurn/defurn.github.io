@@ -80,9 +80,14 @@
     border-radius: 100%;
     width:65vw;
   }
-  #jsprojects{
+
+  #portfolio{
+    order:2;
     background:#777;
-    order: 2;
+
+  }
+  #jsprojects{
+
     padding-top:5vh;
 
   }
@@ -103,13 +108,16 @@
     margin-top:-15px;
     margin-bottom:-15px;
   }
-#pictures>img{
-  height:100%;
+
+#pictures img{
+  width:200%;
+  margin:-10px;
 
 }
 
   div>h2{
     padding:7px;
+    background:none;
   }
 
 }
@@ -122,6 +130,7 @@
     flex-wrap:wrap;
     font-family:'Archivo Narrow';
     margin-top:-1px;
+    height:auto;
   }
 
   body>div{
@@ -150,6 +159,7 @@
 
   #contact{
     background:#bbb;
+    z-index: 1;
   }
 
   #about{
@@ -166,6 +176,7 @@
   right:12%;
   top:-1px;
   display:inline-flex;
+  z-index: 0;
 }
 .slant{
   background:#bbb;
@@ -186,26 +197,40 @@
   padding-left:1%;
 }
 
-#jsprojects{
+#jsprojects>h2, #translations>h2, #pictures>h2{
+  padding:20px;
+}
+
+#portfolio{
+  display:flex;
+  flex-flow:column;
+  background:#777;
+  overflow:hidden;
+
+}
+#jsprojects, #translations, #pictures{
   background:#777;
   text-align:center;
   display:flex;
-  justify-content:center;
-  align-items:center;
+  height: auto;
 }
 
-#jsprojects>h2{
-  padding:20px;
+#translations div{
+  padding:15px;
 }
-#translations{
-  display:none;
+#pictureBox{
+  display:flex;
+  /*flex-direction: column;*/
 }
-#pictures{
-  display:none;
+#pictures div, #pictures a:hover{
+height:1vh;
+text-align:left;
+background:none;
 }
 
-.project{
-  padding:.7em;
+#pictures img{
+  width:10px;
+  height:10px;
 }
 
 .copy, .copy:hover{

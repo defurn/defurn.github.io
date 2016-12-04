@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Syncopate:700');
+
 body{
   background:black;
+
+}
+
+#gameboard{
+  width:100vw;
 }
 #reset{
   color:white;
@@ -36,7 +42,7 @@ table{
   color:black;
   border:solid black 0.1em;
   cursor:crosshair;
- 
+
 }
 
 .btn{
@@ -62,7 +68,3 @@ table{
   padding-bottom:1em;
   width:15em;
 }
-
-
-
-

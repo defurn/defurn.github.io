@@ -5,13 +5,13 @@
   #shapes{
     position:fixed;
     right:2%;
-    top:5px;
+    top:0px;
     display:inline-flex;
   }
   .slant{
     background:#999;
     width: 10px;
-  	height: 35px;
+  	height: 40px;
     margin-right:1vw;
   }
 
@@ -64,7 +64,7 @@
   #about{
     background: #999;
     text-align:center;
-    padding-top:5vh;
+    padding-top:7vh;
     order: 1;
   }
 

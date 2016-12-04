@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
 
-@media (max-width:420px){
+@media (max-width:400px){
+
+  #shapes{
+    position:absolute;
+    right:2%;
+    top:5px;
+    display:inline-flex;
+  }
+  .slant{
+    background:#999;
+    width: 10px;
+  	height: 40px;
+    margin-right:1vw;
+  }
+
   body{
     background:#111;
     display:flex;

@@ -79,6 +79,9 @@
     margin:1px;
     background: #555;
   }
+  .copy, .copy:hover{
+    background:red; !important
+  }
 
 }
 

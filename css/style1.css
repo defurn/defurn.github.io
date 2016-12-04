@@ -197,6 +197,12 @@
 #jsprojects>h2{
   padding:20px;
 }
+#translations{
+  display:none;
+}
+#pictures{
+  display:none;
+}
 
 .project{
   padding:.7em;

@@ -6,7 +6,7 @@ body{
 }
 
 #gameboard{
-  width:100vw;
+  width:100%;
 }
 #reset{
   color:white;
@@ -30,6 +30,7 @@ p{
 table{
   background:#000000;
   margin:auto;
+  
 }
 
 .box{

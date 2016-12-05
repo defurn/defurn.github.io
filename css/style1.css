@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
+
+@media (max-width:444px){
+
+  #shapes{
+    position:fixed;
+    right:2%;
+    top:0px;
+    display:inline-flex;
+  }
+  .slant{
+    background:#999;
+    width: 10px;
+  	height: 60px;
+    margin-right:1vw;
+  }
+
+  body{
+    background:#111;
+    display:flex;
+    flex-direction:column;
+    font-family:'Archivo Narrow';
+    margin: auto;
+  }
+
+  body>div{
+  }
+
+  a{
+    text-decoration:none;
+    color:black;
+    padding:10px;
+
+  }
+  a:visited{
+    text-decoration:none;
+  }
+
+  #nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    background:#ddd;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    margin: auto;
+    order: 0;
+    font-size: 2em;
+  }
+
+  #contact{
+    background: #bbb;
+    order:3;
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    padding-top:5vh;
+    font-size: 2em;
+  }
+
+.contactbtn{
+  }
+
+
+  #about{
+    background: #999;
+    text-align:center;
+    padding-top:10vh;
+    order: 1;
+  }
+
+  #aboutText{
+    text-align:left;
+    padding:1vh;
+  }
+  #aboutText>h2{
+    text-align:center;
+  }
+  #mypicture{
+    border-radius: 100%;
+    width:65vw;
+  }
+
+
+  #portfolio{
+    order:2;
+    background:#777;
+
+  }
+  #jsprojects{
+    padding-top:5vh;
+
+  }
+
+  .project{
+    padding:1vh;
+    margin:1px;
+    background: #555;
+  }
+  .copy, .copy:hover{
+    background:red; !important
+  }
+
+  .pic{
+    height:15vh;
+    max-width:100%;
+    overflow:hidden;
+    margin-top:-15px;
+    margin-bottom:-15px;
+  }
+
+#pictures img{
+  width:200%;
+  margin:-10px;
+
+}
+
+  div>h2{
+    padding:7px;
+    background:none;
+  }
+
+  h4{
+    padding:7px;
+    margin-top:-12px;
+    font-style: italic;
+  }
+
+}
+
+@media (min-width: 445px) {
+
+  body {
+    display:flex;
+    background:#000;
+    flex-wrap:wrap;
+    font-family:'Archivo Narrow';
+    margin-top:-1px;
+    height:auto;
+  }
+
+  body>div{
+    width:100%;
+    padding:10px;
+  }
+
+  a{
+    text-decoration:none;
+    color:black;
+      padding:10px;
+
+  }
+  a:visited{
+    text-decoration:none;
+  }
+
+  a:hover{
+    color:#ccc;
+    background-color:black;
+  }
+
+  #email:hover{
+    cursor:copy;
+  }
+
+  #contact{
+    background:#bbb;
+    z-index: 1;
+  }
+
+  #about{
+    background:#999;
+    display:flex;
+  }
+
+  #mypicture{
+    border-radius:100%;
+  }
+
+#shapes{
+  position:absolute;
+  right:12%;
+  top:-1px;
+  display:inline-flex;
+  z-index: 0;
+}
+.slant{
+  background:#bbb;
+  width: 100px;
+	height: 90px;
+  transform: skew(120deg);
+  margin-right:50px;
+}
+
+#nav{
+  font-size:2em;
+  background:#ddd;
+  display:inline-flex;
+}
+
+#aboutText{
+  padding-top:5%;
+  padding-left:1%;
+}
+
+#jsprojects>h2, #translations>h2, #pictures>h2{
+  padding:20px;
+}
+
+#portfolio{
+  display:flex;
+  flex-flow:column;
+  background:#777;
+  overflow:hidden;
+
+}
+#jsprojects, #translations, #pictures{
+  background:#777;
+  text-align:center;
+  display:flex;
+  height: auto;
+}
+
+#translations div{
+  padding:15px;
+}
+#pictureBox{
+  display:flex;
+  /*flex-direction: column;*/
+}
+#pictures div, #pictures a:hover{
+height:1vh;
+text-align:left;
+background:none;
+}
+
+#pictures img{
+  width:10px;
+  height:10px;
+}
+
+.copy, .copy:hover{
+  background:red; !important
+}
+
+}

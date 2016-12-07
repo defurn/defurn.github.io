@@ -1,0 +1,55 @@
+.main{
+  font-family:Bungee Hairline, serif;
+  background:#4f2129;
+  font-size:55px;
+  color:#c5d2e8;
+
+  text-align:center;
+}
+
+
+.calculatorBox{
+  padding:15px;
+  background:#23467f;
+  width:330px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+    font-weight:bold;
+}
+
+.num:hover{
+  cursor:pointer;
+}
+
+.display{
+  background:grey;
+  border:#23467f solid 12px;
+  text-align:right;
+  color:black;
+  padding-right:9px;
+  overflow:hidden;
+}
+
+.num:hover{
+  background:#aaa;
+  border-radius:100%;
+  opacity:.8;
+}
+
+.clear:hover{
+
+  cursor:pointer;
+  background:#aaa;
+  border-radius:25px;
+  opacity:.8;
+}
+
+.clear{
+  font-size:.8em;
+}
+
+#homelink, #codepen{
+  font-size:.5em;
+
+}

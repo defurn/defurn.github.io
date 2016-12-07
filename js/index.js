@@ -1,4 +1,5 @@
 var clipboard = new Clipboard('#email');
+
 clipboard.on('success', function(e) {
   console.log(e);
         $('#email').html("copied to clipboard");
@@ -8,6 +9,10 @@ clipboard.on('success', function(e) {
         $('#email').removeClass('copy');
         }, 2000);
     });
+
 clipboard.on('error', function(e) {
         console.log(e);
     });
+
+//create blog posting handler//codepen importer?
+//function postBlog(){}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer</title>
+
+
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<div class="main container-fluid">
+  <div id="codepen"><a href="http://codepen.io/defurni/fullhttp://codepen.io/defurni/pen/pydyrp/reJePd">codepen.io version</a></div>
+
+ <div class="content">
+  <div class="center">
+   <h1>Wikipedia<br><small>search wikipedia</small></h1>
+   <div id="search" class="search">
+    <input class="searchBox" type="text" id="searchTerm">
+    <div><button onclick="searchWiki()" class="btn btn-default" id="search"><span class="glyphicon glyphicon-search"></span>   search</button>
+    </div>
+    <div class="random">
+     <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+      <button class="btn btn-default">random article</button></a>
+    </div>
+   </div>
+   </div>
+   <div class="resultBox" id="result">
+
+
+   </div>
+  </div>
+ </div>
+
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

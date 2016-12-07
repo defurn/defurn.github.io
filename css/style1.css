@@ -7,12 +7,15 @@
     right:2%;
     top:0px;
     display:inline-flex;
+    z-index: -1;
   }
   .slant{
     background:#999;
     width: 10px;
   	height: 55px;
     margin-right:1vw;
+    float:right;
+
   }
 
   body{
@@ -126,7 +129,10 @@
     padding:7px;
     margin-top:-12px;
     font-style: italic;
+
   }
+
+
 
 }
 
@@ -146,10 +152,10 @@
     padding:10px;
   }
 
-  a{
+  #portfolio a, #contact>a, #nav>a{
     text-decoration:none;
     color:black;
-      padding:10px;
+    padding:10px;
 
   }
   a:visited{
@@ -184,7 +190,7 @@
   right:12%;
   top:-1px;
   display:inline-flex;
-  z-index: 0;
+  z-index: -1;
 }
 .slant{
   background:#bbb;
@@ -198,6 +204,7 @@
   font-size:2em;
   background:#ddd;
   display:inline-flex;
+  z-index: 0;
 }
 
 #aboutText{
@@ -245,4 +252,13 @@ background:none;
   background:red; !important
 }
 
+.project{
+  vertical-align: middle;
+}
+#codepen, #codepen a{
+margin: 20px;
+color: white;
+text-decoration: none;
+text-align:center;
+}
 }

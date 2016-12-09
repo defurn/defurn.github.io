@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
 
 @media (max-width:444px){
-
+  #codepen{
+    order:4;
+  }
   #shapes{
     position:fixed;
     right:2%;
@@ -158,27 +160,31 @@
     padding:10px;
 
   }
-  a:visited{
+  #portfolio a:visited, #contact>a:visited, #nav>a:visited{
     text-decoration:none;
   }
 
-  a:hover{
+  #portfolio a:hover, #contact>a:hover, #nav>a:hover{
     color:#ccc;
     background-color:black;
   }
 
   #email:hover{
     cursor:copy;
+    color:black !important;
+    background:red !important;
   }
 
   #contact{
     background:#bbb;
     z-index: 1;
+
   }
 
   #about{
     background:#999;
     display:flex;
+    height:100vh;
   }
 
   #mypicture{
@@ -205,11 +211,14 @@
   background:#ddd;
   display:inline-flex;
   z-index: 0;
+  /*position: fixed;*/
 }
 
 #aboutText{
   padding-top:5%;
   padding-left:1%;
+  clear:left;
+
 }
 
 #jsprojects>h2, #translations>h2, #pictures>h2{
@@ -235,17 +244,19 @@
 }
 #pictureBox{
   display:flex;
+  width: 100%;
   /*flex-direction: column;*/
 }
 #pictures div, #pictures a:hover{
 height:1vh;
+
 text-align:left;
 background:none;
 }
 
 #pictures img{
-  width:10px;
-  height:10px;
+  width:100px;
+  height:100px;
 }
 
 .copy, .copy:hover{

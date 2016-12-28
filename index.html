@@ -39,10 +39,12 @@
 
 <div id=portfolio>
  <div id="jsprojects">
-   <h2>simple javascript projects</h2><h4>these scripts don't currently run as hosted on github, but each has a link to a working version on codepen</h4>
+  <div class="projectDesc">
+  <h2>simple javascript projects</h2>
+  <h4>these scripts don't currently run as hosted on github, but each has a link to a working version on codepen</h4>
+  </div>
 
-
-
+        <div id="projectContainer">
         <div class="project active">
           <a href="projects/quotemachine/index.html" data-codepen="http://codepen.io/defurni/full/pyrOJb"><h3>quote machine</h3>
           <p>gets a random famous quote to tweet</p></a>
@@ -88,12 +90,13 @@
             <h3>littletinyurl url shortener</h3>
             <p>this server project hosted on heroku doesn't really shorten your urls but the point is to practice depoloying a mongodb through node/express on heroku that generates a new url which will redirect to the original url that you enter</p></a>
         </div>
-
+      </div><!--projectContainer div -->
     </div><!--jsprojects div -->
 
-
     <div id="translations">
+      <div class="projectDesc">
       <h2> translations </h2>
+      </div>
 
       <div class="translation project">
         <a href=""><h3>Russian >> English</h3>
@@ -102,10 +105,15 @@
       <div class="translation project">
         <a href=""><h3>Chinese >> English</h3>
           <p>sample translation</p></a>
-      </div>    </div><!-- translations -->
+      </div>
+     </div><!-- translations -->
+
 
     <div id="pictures">
+      <div class="projectDesc">
       <h2>some cool photos and photoshops</h2>
+      </div>
+
       <div id="pictureBox">
         <a href="./coolpics/02.jpg"><div id="pic02" class="pic project"><img src="./coolpics/02.jpg"></div></a>
         <a href="./coolpics/01.jpg"><div id="pic01" class="pic project"><img src="./coolpics/01.jpg"></div></a>

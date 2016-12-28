@@ -184,92 +184,107 @@
   #about{
     background:#999;
     display:flex;
-    height:100vh;
   }
 
   #mypicture{
     border-radius:100%;
   }
 
-#shapes{
-  position:absolute;
-  right:12%;
-  top:-1px;
-  display:inline-flex;
-  z-index: -1;
-}
-.slant{
-  background:#bbb;
-  width: 100px;
-	height: 90px;
-  transform: skew(120deg);
-  margin-right:50px;
+  #shapes{
+    position:absolute;
+    right:12%;
+    top:-1px;
+    display:inline-flex;
+    z-index: -1;
+  }
+  .slant{
+    background:#bbb;
+    width: 100px;
+  	height: 90px;
+    transform: skew(120deg);
+    margin-right:50px;
+  }
+
+  #nav{
+    font-size:2em;
+    background:#ddd;
+    display:inline-flex;
+    z-index: 0;
+    /*position: fixed;*/
+  }
+
+  #aboutText{
+    padding-top:5%;
+    padding-left:1%;
+    clear:left;
+
+  }
+
+  #jsprojects>h2, #translations>h2, #pictures>h2{
+    padding:20px;
+  }
+
+  #projectContainer{
+    display:flex;
+    flex-wrap: wrap;
+    vertical-align:bottom;
+
+  }
+
+  #portfolio{
+    display:flex;
+    flex-flow:column;
+    background:#777;
+  }
+
+  #jsprojects, #translations, #pictures{
+    background:#777;
+    text-align:center;
+    display:flex;
+    height: auto;
+    padding:10px;
+
+  }
+
+  .projectDesc{
+    padding:10px;
+  }
+
+  #translations div{
+    padding:15px;
+  }
+  #pictureBox{
+    display:flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+
+  #pictures img{
+    width:100px;
+    height:100px;
+  }
+
+  #pictureBox a:hover{
+    background: none;
+    opacity:.7;
+  }
+
+  .copy, .copy:hover{
+    background:red !important;
+  }
+
+  .project{
+    width: 33%;
+  }
+
+#projectContainer .project{
 }
 
-#nav{
-  font-size:2em;
-  background:#ddd;
-  display:inline-flex;
-  z-index: 0;
-  /*position: fixed;*/
-}
-
-#aboutText{
-  padding-top:5%;
-  padding-left:1%;
-  clear:left;
-
-}
-
-#jsprojects>h2, #translations>h2, #pictures>h2{
-  padding:20px;
-}
-
-#portfolio{
-  display:flex;
-  flex-flow:column;
-  background:#777;
-  overflow:hidden;
-
-}
-#jsprojects, #translations, #pictures{
-  background:#777;
+  #codepen, #codepen a{
+  margin: 20px;
+  color: white;
+  text-decoration: none;
   text-align:center;
-  display:flex;
-  height: auto;
-}
-
-#translations div{
-  padding:15px;
-}
-#pictureBox{
-  display:flex;
-  width: 100%;
-  /*flex-direction: column;*/
-}
-#pictures div, #pictures a:hover{
-height:1vh;
-
-text-align:left;
-background:none;
-}
-
-#pictures img{
-  width:100px;
-  height:100px;
-}
-
-.copy, .copy:hover{
-  background:red; !important
-}
-
-.project{
-  vertical-align: middle;
-}
-#codepen, #codepen a{
-margin: 20px;
-color: white;
-text-decoration: none;
-text-align:center;
-}
+  }
 }

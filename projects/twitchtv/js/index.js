@@ -1,79 +1,66 @@
-//this works make it pretty
-
+//can't figure out how to do this async, ,and probably the way of updating the stremers object displayed is also inefficient
 var url = 'https://www.twitch.tv/';
-var JSONurl = 'https://wind-bow.hyperdev.space/twitch-api/streams/';
-var streamers = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
-
-function findOnline() {
-  //Stub -- show only online streams
-}
-
-function findOffline() {
-  //stub -- show only offline streams
-}
-
-function showAll() {
-  //stub -- show all streams, on or offline
-}
+var streamsUrl = 'https://wind-bow.gomix.me/twitch-api/streams/';
+var streamers = [{name: 'ESL_SC2', status: 'offline'}, {name: 'OgamingSC2', status: 'offline'}, {name: 'cretetion', status: 'offline'}, {name: 'freecodecamp', status: 'offline'}, {name: 'storbeck', status: 'offline'}, {name: 'habathcx', status: 'offline'}, {name: 'RobotCaleb', status: 'offline'}, {name: 'noobs2ninjas', status: 'offline'}];
 
 function showAddStream(){
-  $('.add').addClass('display').focus();
-  $('.ins').addClass('display');
+  var addInput = document.getElementById('add');
+  var instructions = document.getElementById('ins');
+  addInput.addEventListener("keyup",function(event) {
+    if (event.keyCode == 13) {
+      showAddStream();
+     }
+  });
+  if (addInput.classList.contains('display')){
+    addInput.classList.remove('display');
+    instructions.classList.remove('display');
+    addStream(addInput.value);
+
+  } else {
+    addInput.value = '';
+    addInput.classList += ' display';
+    addInput.focus();
+    instructions.classList += ' display';
+  }
 }
 
-function addStream() {
-  if ($('.add').val() != "") {
-    var newstreamer = $('.add').val();
-    //console.log(newstreamer);
-    streamers.push(newstreamer);
-    $('.streams').empty();
-    getStreams();
-    $('.add').val("");
-  } 
+function addStream(streamer) {
+  var streamsElement = document.getElementById('streams');
+  if (streamer != "") {
+    streamers.push({name: streamer, status: 'offline'});
+  }
+  while (streamsElement.firstChild){
+    streamsElement.removeChild(streamsElement.firstChild);
+  }
+  getStreams();
 }
 
 function getStreams() {
-  var arr = [];
-  for (i = 0; i < streamers.length; i++) {    
-    $.getJSON(JSONurl + streamers[i] + '?callback=?', function(data, status, xhr) {
-        
+  var streamsElement = document.getElementById('streams');
+  for (i = 0; i < streamers.length; i++) {
+    var streamerDiv = document.createElement('div');
+    var streamData = requestStreamData(streamers[i].name);
 
-    if (data.error){
-       streamers.pop(); 
-       //do something in the DOM here to alert that this steram does not exist
-       alert(data.message);
-       
+    if (streamData.slice(10,14) === "null"){
+      streamers[i].status = "offline";
+      streamerDiv.innerHTML = streamers[i].name + ": " + streamers[i].status;
+    } else {
+      streamers[i].status = "online";
+      streamerDiv.innerHTML = '<a href="' + url + streamers[i].name + '"target="blank">' + streamers[i].name + ": "+ streamers[i].status + '</a>';
     }
-      
-    else{
-      var id = data._links.self.slice(37);
 
-        if (data.stream === null) {
-          $('.streams').append("<div><p>" + id + ": offline </p></div>");
-        } 
-      
-        else {//<img src=" + data.stream.preview.small + ">
-          $('.streams').append("<div><p><a href=" + url + id + "' target='_blank'> " + id + ": ONLINE NOW</p></a></div>");
-        }
-    }
-  });
-     
+    streamsElement.appendChild(streamerDiv);
+   }
 }
 
-  
-  
-  $(".addStream").keyup(function(event) {
-    if (event.keyCode == 13) {
-      addStream();
-      $('.add').removeClass('display');
-      $('.ins').removeClass('display');
-      
-    }
+function requestStreamData(streamer){
+  var httpRequest = new XMLHttpRequest();
+  var response;
+  httpRequest.addEventListener("load", function(){
+    response = httpRequest.response;
   });
 
-
-
-
-
-
+  httpRequest.open('GET', streamsUrl + streamer, false);
+  httpRequest.send();
+  return response;
 }

@@ -1,3 +1,7 @@
+import React, { Component } from 'react';
+import './App.css';
+import marked from 'marked';
+
 var defaultText = 'Heading\n' +
 '=======\n '+
 '\n' +
@@ -71,13 +75,11 @@ class App extends React.Component {
           </textarea>
           <div id="markdown" dangerouslySetInnerHTML={{__html: this.state.output}} />
         </div>
-          <div id="oncodepen"> <a href="http://codepen.io/defurni/full/pydyrp/"<h4>on codepen</h4></a></div>
+          <div id="oncodepen"> <a href="http://codepen.io/defurni/full/pydyrp/"><h4>on codepen</h4></a></div>
       </div>
     )
   }
 }
 
 
-
-
-React.render(<App />, document.getElementById('app'));
+export default App;

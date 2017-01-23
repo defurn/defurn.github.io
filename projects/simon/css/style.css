@@ -1,0 +1,75 @@
+body{
+  display:flex;
+  justify-content: center;
+}
+
+#gameBoard{
+  background-color: black;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+#gameButtons{
+  display:flex;
+  background-color: silver;
+  justify-content: space-around;
+  border:1px black solid;
+  flex-flow: wrap;
+  border-radius:100%;
+
+}
+
+#controlButtons{
+  display:flex;
+  border:1px black solid;
+  width:100%;
+  margin:5px;
+  padding:5px;
+  justify-content: center;
+}
+.playButton{
+  height:100px;
+  width:100px;
+  margin:5px;
+  padding:5px;
+  float: left;
+
+}
+
+.controlButton{
+  border:1px black solid;
+
+
+}
+
+#redButton{
+  background-color: red;
+  color: white;
+}
+
+#blueButton{
+  background-color: blue;
+  color: white;
+}
+
+#greenButton{
+  background-color: green;
+  color: white;
+}
+
+#yellowButton{
+  background-color: yellow;
+  color: white;
+}
+
+#startButton{
+  background-color: grey;
+  color: white;
+}
+
+#strictToggleButton{
+  background-color: white;
+  color: blue;
+}
